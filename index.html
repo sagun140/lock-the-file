@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lock The File — Encrypted Mac vault</title>
+    <meta
+      name="description"
+      content="Lock The File is a Mac app that vaults sensitive files in a Finder-like folder. Unlock with Touch ID. Free for 5 files; Pro unlocks unlimited."
+    />
+    <meta property="og:image" content="hero.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0e100c;
+        --ink: #f2efe6;
+        --muted: #a8ad9a;
+        --brass: #c4a35a;
+        --brass-hot: #e0c078;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "IBM Plex Sans", system-ui, sans-serif;
+        color: var(--ink);
+        background: #0a0b09;
+      }
+      .hero {
+        min-height: 72vh;
+        display: grid;
+        place-items: end start;
+        padding: 40px 24px 48px;
+        background:
+          linear-gradient(180deg, transparent 30%, rgba(10, 11, 9, 0.92) 85%),
+          radial-gradient(ellipse 80% 60% at 50% 40%, rgba(196, 163, 90, 0.12), transparent 60%),
+          #0e100c url("hero.png") center 28% / min(720px, 92vw) auto no-repeat;
+      }
+      .hero-copy { max-width: 640px; }
+      .brand {
+        font-family: "Anybody", sans-serif;
+        font-weight: 800;
+        font-size: clamp(2.6rem, 9vw, 3.8rem);
+        letter-spacing: -0.03em;
+        color: var(--brass-hot);
+        margin: 0 0 14px;
+        line-height: 0.95;
+      }
+      h1 {
+        font-family: "Anybody", sans-serif;
+        font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+        font-weight: 700;
+        margin: 0 0 12px;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        color: var(--muted);
+        line-height: 1.55;
+        margin: 0 0 22px;
+        max-width: 42ch;
+      }
+      .cta {
+        display: inline-block;
+        background: linear-gradient(180deg, var(--brass-hot), var(--brass));
+        color: #1a160c;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 4px;
+      }
+      .cta.secondary {
+        background: transparent;
+        border: 1px solid rgba(196, 163, 90, 0.35);
+        color: var(--ink);
+        margin-left: 10px;
+      }
+      section {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 8px 24px 72px;
+      }
+      p { color: var(--muted); line-height: 1.55; margin: 0 0 14px; }
+      ul {
+        color: var(--muted);
+        padding-left: 1.2rem;
+        margin: 0 0 28px;
+        line-height: 1.6;
+      }
+      .fine { font-size: 13px; margin-top: 24px; }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="brand">LOCK THE FILE</p>
+        <h1>Your files. Behind a vault. Opened like a folder.</h1>
+        <p class="lede">
+          Seal sensitive files on your Mac. Unlock with Touch&nbsp;ID, use them in Finder,
+          then lock again — keys stay on your machine.
+        </p>
+        <a class="cta" href="https://github.com/sagun140/lock-the-file">View on GitHub</a>
+        <a class="cta secondary" href="#details">How it works</a>
+      </div>
+    </header>
+    <section id="details">
+      <ul>
+        <li><strong style="color: var(--ink)">Free:</strong> up to 5 sealed files</li>
+        <li><strong style="color: var(--ink)">Pro ($29 one-time):</strong> unlimited sealed files via license key</li>
+        <li>Auto-lock when your Mac locks, sleeps, or sits idle</li>
+        <li>Sold as a macOS app (DMG) with in-app license activation</li>
+      </ul>
+      <p>
+        Customers discover Lock The File through GitHub, Product Hunt, and Mac/privacy
+        communities. They pay a one-time Pro fee through Lemon&nbsp;Squeezy and receive a
+        license key by email.
+      </p>
+      <p class="fine">
+        Support: reply to your Lemon Squeezy receipt email.
+      </p>
+    </section>
+  </body>
+</html>
